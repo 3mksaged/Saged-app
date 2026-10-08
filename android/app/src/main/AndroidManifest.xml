@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sajid_app">
    <application
-        android:label="sajid_app"
+        android:label="إدارة الدراسة"
         android:name="${applicationName}"
         android:icon="@android:drawable/sym_def_app_icon">
         <activity
