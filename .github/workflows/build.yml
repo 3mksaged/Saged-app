@@ -28,8 +28,5 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Fix Android Resource Generation
-        run: flutter create . --org com.example --project-name sajid_app --platforms android
-
-      - name: Build APK
-        run: flutter build apk --release
+      - name: Build APK without minification
+        run: flutter build apk --release --no-shrink
