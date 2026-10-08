@@ -28,5 +28,11 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Build APK without minification
+      - name: Build APK
         run: flutter build apk --release --no-shrink
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: build/app/outputs/flutter-apk/*.apk
